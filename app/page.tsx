@@ -21,7 +21,7 @@ export default function Home() {
       let multiple = 0;
       if(+age>=20 && +age<=24){
         multiple = 20
-      }else if(+age>=25 && +age<=30){
+      }else if(+age>=25 && +age<=34){
         multiple=19
       }else if(+age>=35 && +age<=44){
         multiple=18
