@@ -68,6 +68,7 @@ export default function Home() {
   return (
    <div className="flex justify-center items-center w-full  bg-primary h-full">
       <Card title="Heart Rate Calculate">
+        <div className="mb-2">
         <div className="w-full">
           <Input title="Umur" passingData={ageHandler}/>
         </div>
@@ -75,7 +76,12 @@ export default function Home() {
             <Button title="Hitung" click={clicked}/>
           </div>
           <Table data={data}/>
+          </div>
+        <div className="text-right mt-3">
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9307357/">Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9307357</a>
+        </div>
       </Card>
+      
 
     </div>
   );
