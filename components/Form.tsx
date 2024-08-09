@@ -12,12 +12,13 @@ export default function Form() {
     register,
     handleSubmit,
     formState:{errors},
-    setError
+    reset
   } = useForm<FormData>({
     resolver: zodResolver(UserSchema)
   });
   const onSubmit = async(data:FormData)=>{
     console.log("success", data)
+    reset()
   }
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
